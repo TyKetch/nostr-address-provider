@@ -1,69 +1,25 @@
-# nostr-address-provider
+
+# Apple Nostr Verication (aapl.pro)
+**100% Free**
+To get started, just head to [our site](https://aapl.pro/) and insert your pubilic key. 
+(or, if you have a chrome extension, you may see an option to autofill)
+
+**Choose your own handle!**
+[yourcustomhandle]@aapl.pro
+
+
+
+
 
 Web based [nostr](https://github.com/nostr-protocol/nostr) address ([NIP-05](https://github.com/nostr-protocol/nips/blob/master/05.md)) provider service.
 
-Users can enter their exisiting lightning address when registering and then use their nostr address as lightning address.
+## The Apple Nostr Account
+- This service is brought to you by the (unofficial) offical Apple nostr account. Follow us here:
 
-## Tech
-
-The project is a website built with [Astro](https://astro.build/).  
-By default it is hosted on [Vercel](https://vercel.com/) and uses a [MongoDB](https://www.mongodb.com/) backend.  
-Both Vercel & MongoDB offer free plans which should be sufficient to run this.  
-You will still need a domain name if you want to offer this service on a TLD, though.
-
-## Setup
-
-### Prerequisites
-
-1. Fork this repository
-
-### Vercel
-
-1. Sign up or login with Vercel and add the forked repo as a project.
-2. Go to `Settings -> Domains` and set up your domain name with Vercel
-3. Go to `Settings -> Integrations`  
-   Add the `MongoDB Atlas` integration on Vercel and create your cluster (see `MongoDB` below)
-4. Go to `Settings -> Environment Variables` and check if the `MONGODB_URI` has been added. This variable is needed to connect to the database.
-
-### MongoDB
-
-1.  When asked `Where would you like to connect from?` during setup, choose `Cloud Environment`, then `IP Access List` and add `0.0.0.0/0` to allow access from everywhere.
-
-2.  Select your cluster, open the tab `Collections` and choose `Add My Own Data`.
-    Enter `users` as database name, `registered` as collection name and create the database.  
-    If you want to choose different names, you can do so. In this case, update the corresponding values in `site.config.ts` (see `Final touches` below).
-
-### Final touches
-
-1. Edit `site.config.ts` and set your domain, slogan and donation LNURL
-2. Commit & push
-3. Watch Vercel doing magic (don't blink, they are fast)
-4. Enjoy your new nostr address service
-5. Announce it on nostr!
-
-### Tools
-
-Basic tools for importing and exporting are included.  
-[Check the README](https://github.com/jigglycrumb/nostr-verify/blob/main/src/pages/_tools/README.md) for more information.
-
-## Development
-
-Everything is by Astro standards.
-
-To run the page locally, you'll have to create a file called `.env` in the project root and add your MongoDB connection string:
-
-`MONGODB_URI="mongodb+srv://<your connection link>"`
-
-You can get your connection link from MongoDB and/or Vercel.
-
-To start the local server, run:
-
-    node run dev
-
-For more, check the Astro docs.
+    npub14u0ghzsn8jcgnyjxpj4ynmdykl34yrnztegyv0g83l3ucjfa2pvsmp2vql  
 
 ## Credits
-
+- Forked from [jigglycrumb's repo](https://github.com/jigglycrumb/nostr-address-provider)
 - Copy to clipboard hook by [usehooks-ts.com](https://usehooks-ts.com/react-hook/use-copy-to-clipboard)
 - Copy icon by [online web fonts](http://www.onlinewebfonts.com), licensed by CC BY 3.0
 
@@ -71,4 +27,5 @@ For more, check the Astro docs.
 
 Questions, comments, complaints? Hit me up on nostr:
 
-    npub1g9k2rya223yt3n9p7zty9qrhvhxqac5evz0ewt0sv9x0hr4z72csd8sezh
+    npub14u0ghzsn8jcgnyjxpj4ynmdykl34yrnztegyv0g83l3ucjfa2pvsmp2vql  
+the official *unofficial* Apple nostr account
